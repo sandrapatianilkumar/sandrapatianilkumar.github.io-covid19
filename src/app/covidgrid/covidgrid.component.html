@@ -1,9 +1,19 @@
 <!-- https://stackblitz.com/edit/angular-expandandselect-q4fmox?file=app/table-expandable-rows-example.html -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>COVID-19 Report Tracker</span>
+        <span class="example-spacer"></span>
+        <span>Sandrapati Anilkumar</span>
+    </mat-toolbar-row>
+</mat-toolbar>
 
-<mat-form-field>
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Ex. ium">
-</mat-form-field>
+<div>
+    <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Ex. india">
+    </mat-form-field>
+</div>
+
 <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
 

@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 // import { MatInputModule } from '@angular/material/input';
 
 import {
-  MatTableModule, MatInputModule, MatFormFieldModule, MatPaginatorModule, MatSortModule
+  MatTableModule, MatInputModule, MatFormFieldModule, MatPaginatorModule, MatSortModule, MatToolbarModule
 } from '@angular/material';
 
 
@@ -30,7 +30,8 @@ import { CovidgridComponent } from './covidgrid/covidgrid.component';
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
