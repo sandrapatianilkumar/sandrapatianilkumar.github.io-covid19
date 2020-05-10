@@ -1,3 +1,5 @@
+<!-- https://stackblitz.com/edit/angular-expandandselect-q4fmox?file=app/table-expandable-rows-example.html -->
+
 <mat-form-field>
     <mat-label>Filter</mat-label>
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Ex. ium">
@@ -53,7 +55,7 @@
             <td mat-cell *matCellDef="let element"> {{element.critical}} </td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns sticky: true"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
